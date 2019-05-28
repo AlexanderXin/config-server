@@ -1,0 +1,68 @@
+---
+spring:
+  profiles: localtest
+  application:
+    name: loca-config-repo-server
+  security:
+    user:
+      name: kylin
+      password: hxsanjin123
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:AlexanderXin/repo-config.git
+          search-paths: gs_config_repo/test
+          ignoreLocalSshSettings: true
+          privateKey: |
+            -----BEGIN RSA PRIVATE KEY-----
+            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
+            -----END RSA PRIVATE KEY-----
